@@ -5,9 +5,6 @@
    "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
@@ -49,15 +46,13 @@
   "javascript.format.indentSwitchCase": true,
   "javascript.preferences.importModuleSpecifier": "shortest",
   "javascript.preferences.importModuleSpecifierEnding": "js",
-  "typescript.preferences.importModuleSpecifierEnding": "js",
-  "typescript.preferences.importModuleSpecifier": "shortest",
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
-  "javascript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
-  "javascript.inlayHints.parameterTypes.enabled": false,
-  "javascript.inlayHints.propertyDeclarationTypes.enabled": false,
-  "javascript.inlayHints.variableTypes.enabled": false,
-  "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+  // "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+  // "javascript.inlayHints.parameterNames.enabled": "all",
+  // "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  // "javascript.inlayHints.parameterTypes.enabled": false,
+  // "javascript.inlayHints.propertyDeclarationTypes.enabled": false,
+  // "javascript.inlayHints.variableTypes.enabled": false,
+  // "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
 
   "json.schemas": [
     {
