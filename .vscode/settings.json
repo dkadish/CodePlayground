@@ -3,7 +3,7 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
    "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
@@ -16,7 +16,7 @@
       "severity": "off"
     }
   ],
-  "js/ts.implicitProjectConfig.checkJs": true,
+  // "js/ts.implicitProjectConfig.checkJs": true,
   "search.exclude": {
     "**/node_modules": true,
     "**/_lib": true,
