@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.decorations.enabled": false,
+		"git.autorefresh": false,
+		"breadcrumbs.symbolPath": "off",
+		"javascript.format.enable": true
+	}
+}
