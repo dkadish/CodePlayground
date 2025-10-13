@@ -36,10 +36,8 @@ export function setPosition(x, y, element = thing) {
   state.y = y;
 
   if (element != null) {
-    element.style.left = `${ state.x * window.innerWidth }px`;
-    element.style.top = `${ state.y * window.innerHeight }px`;
+    transform(element);
   }
-  transform(element);
 }
 
 export function setSize(size, element = thing) {
