@@ -13,15 +13,15 @@ let y=0;
 
 // Code that runs over and over again
 function loop() {
-  Util.setPosition(x, y);
+  Util.setPositionPixels(x, y);
 
   window.requestAnimationFrame(loop);
 }
 
 function handlePointerMove(event){
   // window.innerWidth/Height is the width/height of the browser window
-  x = event.x / window.innerWidth;
-  y = event.y / window.innerHeight;
+  x = event.x;
+  y = event.y;
 }
 
 // Setup is run once, at the start of the program. It sets everything up for us!

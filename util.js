@@ -187,7 +187,8 @@ export function createThing(id = null, className = "thing") {
     el.id = newId;
   }
 
-  // Append to document body so it's visible by default. Caller can move it.
+  // Append to document body so it's visible by default. Styling should come
+  // from the stylesheet (.thing or #thing) rather than inline defaults.
   document.body.appendChild(el);
 
   return el;
