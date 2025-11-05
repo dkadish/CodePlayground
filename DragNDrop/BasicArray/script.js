@@ -15,7 +15,6 @@ const size = 100;
 function loop() {
   for(const thing of things){
     const {element, x, y, isDragging} = thing;
-    // console.log(`Loop x: ${x}`);
 
     if(isDragging){
       Util.setPositionPixels(x, y, element);
@@ -42,28 +41,20 @@ function createThings(n){
 function setup() {
   createThings(10);
 
-  // Looping through all of the things
   for(const thing of things){
     const {element, x, y, hue} = thing;
     Util.setPositionPixels(x, y, element);
     Util.setColour(hue, 100, 50, 0.5, element);
     
     document.addEventListener('pointermove', (event) => {
-      // console.log(`PM x is: ${event.x}`);
       for(const t of things){
         t.x = event.x-size/2;
         t.y = event.y-size/2;
       }
     });
     element.addEventListener('pointerdown', (event) => {
-      console.log(event.target);
-      
-      let target = things.find((t) => {
-        return t.element === event.target;
-      })
-
-      console.log(target);
-
+      console.log("Caught pointer down on a circle.");
+      thing.isDragging = true;
     })
     document.addEventListener('pointerup', (event) => {
       for(const t of things){
