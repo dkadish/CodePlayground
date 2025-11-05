@@ -3,7 +3,7 @@
  *
  */
 
-import * as Util from "./util.js";
+import * as Util from "../util.js";
 
 // State variables are the parts of your program that change over time.
 let x = 0.35;
@@ -48,10 +48,10 @@ function setup() {
   document.addEventListener('pointerdown', updateXY);
   document.addEventListener('pointerup', updateXY);
 
-  thing.addEventListener('pointerover', function (event){
+  Util.thing.addEventListener('pointerover', function (event){
     targetSize = overSize;
   });
-  thing.addEventListener('pointerout', (event) => {
+  Util.thing.addEventListener('pointerout', (event) => {
     targetSize = offSize;
   });
 
